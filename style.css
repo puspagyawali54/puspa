@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    color: #facc15;
+    margin-top: 10px;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #020617;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+/* SECTIONS */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.light {
+    background-color: #ffffff;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: #0f172a;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* TOOLS */
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.tool {
+    background: #020617;
+    color: white;
+    width: 150px;
+    height: 130px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool i {
+    font-size: 30px;
+    color: #facc15;
+    margin-bottom: 10px;
+}
+
+/* EXPERIENCE */
+.experience-card {
+    background: #0f172a;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.experience-card span {
+    color: #facc15;
+    font-size: 0.9rem;
+}
+
+/* CONTACT */
+.email {
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #facc15;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #eab308;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 8px 0;
+    }
+}
