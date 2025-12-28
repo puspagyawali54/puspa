@@ -9,8 +9,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
-    <!-- Anti-flickering script -->
+   
+<!-- Anti-flickering script -->
 
+<script>
+  var timeout = 3000; // Timeout value to remove the flicker (in milliseconds)
+  !(function (h, i, d, e) {
+    var t,
+      n = h.createElement("style");
+    (n.id = e),
+      (n.innerHTML = "body{opacity:0}"),
+      h.head.appendChild(n),
+      (t = d),
+      (i.rmfk = function () {
+        var t = h.getElementById(e);
+        t && t.parentNode.removeChild(t);
+      }),
+      setTimeout(i.rmfk, t);
+  })(document, window, timeout, "abhide");
+</script>
+
+<!-- MVTLab Orchestrator -->
+<script
+  src="https://staging-svc.mvtlab.io/scripts/engine.js"
+  data-project-key="FxlA8EJt0Xw89i2rucPDbw"
+  data-mvt="engine"
+  data-flicker-class="abtest-hidden"
+  async
+></script>
 
 </head>
 
